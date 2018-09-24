@@ -1,0 +1,7 @@
+{
+  "extends": "standard",
+  "rules": {
+    "space-before-function-paren": ["error", "never"],
+    "padded-blocks": 0
+  }
+}

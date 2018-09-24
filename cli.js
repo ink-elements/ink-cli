@@ -1,27 +1,33 @@
 #!/usr/bin/env node
-'use strict';
-const updateNotifier = require('update-notifier');
-const meow = require('meow');
-const trash = require('trash');
+'use strict'
+
+const updateNotifier = require('update-notifier')
+const meow = require('meow')
+const ink = require('./lib/ink.js')
 
 const cli = meow(`
-	Usage
-	  $ trash <path|glob> [...]
+  Usage
+    $ ink
 
-	Examples
-	  $ trash unicorn.png rainbow.png
-	  $ trash '*.png' '!unicorn.png'
+  Options
+    init <path>   Create a new ink-elements project
+    publish       Generate PDF document from HTML
+
+  Examples
+    $ ink init project-folder
+    $ cd project-folder
+    $ npm run build
+    $ ink publish
 `, {
-	string: ['_'],
-	// ignore all flags of `rm` program
-	boolean: ['r', 'f', 'i', 'd', 'P', 'R', 'v', 'W']
-});
+})
 
-updateNotifier({pkg: cli.pkg}).notify();
+updateNotifier({ pkg: cli.pkg }).notify()
 
 if (cli.input.length === 0) {
-	console.error('Specify at least one path');
-	process.exit(1);
+  console.error(cli.help)
+  process.exit(1)
+} else if (cli.input[0] === 'init') {
+  ink.init(cli.input[1])
+} else if (cli.input[0] === 'publish') {
+  ink.publish()
 }
-
-trash(cli.input);

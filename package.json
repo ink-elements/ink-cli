@@ -1,22 +1,22 @@
 {
-  "name": "trash-cli",
-  "version": "1.4.0",
-  "description": "Move files and folders to the trash",
+  "name": "ink-cli",
+  "version": "0.0.0",
+  "description": "Manage ink-elements projects",
   "license": "MIT",
-  "repository": "sindresorhus/trash-cli",
+  "repository": "ink-elements/ink-cli",
   "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
+    "name": "Ricardo Gladwell",
+    "email": "ricardo@gladwell.me",
+    "url": "gladwell.me"
   },
   "bin": {
-    "trash": "cli.js"
+    "ink": "cli.js"
   },
   "engines": {
     "node": ">=4"
   },
   "scripts": {
-    "test": "xo && ava"
+    "test": "eslint . && ava"
   },
   "files": [
     "cli.js"
@@ -24,37 +24,30 @@
   "keywords": [
     "cli-app",
     "cli",
-    "trash",
-    "recycle",
-    "bin",
-    "rm",
-    "rmrf",
-    "rimraf",
-    "remove",
-    "delete",
-    "del",
-    "file",
-    "files",
-    "dir",
-    "directory",
-    "directories",
-    "folder",
-    "folders",
-    "xdg"
+    "publish",
+    "publishing"
   ],
   "dependencies": {
+    "electron-pdf": "^1.3.1",
+    "file-url": "^2.0.2",
+    "fs-extra": "^7.0.0",
+    "generator-ink-doc": "^0.1.0",
     "meow": "^3.7.0",
-    "trash": "^4.0.0",
-    "update-notifier": "^1.0.2"
+    "puppeteer": "^1.11.0",
+    "update-notifier": "^1.0.2",
+    "yeoman-environment": "^2.3.3",
+    "yo": "^2.0.5"
   },
   "devDependencies": {
     "ava": "*",
+    "eslint": "^5.6.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
     "execa": "^0.4.0",
     "path-exists": "^3.0.0",
-    "temp-write": "^2.0.1",
-    "xo": "*"
-  },
-  "xo": {
-    "esnext": true
+    "tempy": "^0.2.1"
   }
 }

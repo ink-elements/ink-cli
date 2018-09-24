@@ -1,16 +1,49 @@
-import test from 'ava';
-import tempWrite from 'temp-write';
-import pathExists from 'path-exists';
-import execa from 'execa';
+import test from 'ava'
+import path from 'path'
+import pathExists from 'path-exists'
+import execa from 'execa'
+import tempy from 'tempy'
+import fs from 'fs-extra'
 
-test('trash file', async t => {
-	const filename = tempWrite.sync('foo');
-	await execa('./cli.js', [filename]);
-	t.false(pathExists.sync(filename));
-});
+function inkCli(args) {
+  const cliPath = path.resolve(__dirname, 'cli.js')
+  const result = execa.sync(cliPath, args)
 
-test('ignore rm flags', async t => {
-	const filename = tempWrite.sync('foo');
-	await execa('./cli.js', ['-rf', filename]);
-	t.false(pathExists.sync(filename));
-});
+  if (result.stderr) {
+    console.log(result.stderr)
+  }
+}
+
+async function withTestFolder(testWith) {
+  const temp = tempy.directory()
+  process.chdir(temp)
+
+  try {
+    await testWith(temp)
+  } finally {
+    process.chdir(__dirname)
+    await fs.remove(temp)
+  }
+}
+
+test('should create ink project', async t => {
+  await withTestFolder(async folder => {
+    inkCli(['init', 'project-folder'])
+
+    const project = path.resolve(folder, 'project-folder')
+    t.true(pathExists.sync(project))
+  })
+})
+
+test('should publish PDF', async t => {
+  await withTestFolder(async folder => {
+    inkCli(['init', 'test'])
+    const project = path.resolve(folder, 'test')
+    process.chdir(project)
+    execa.sync('npm', ['run', 'build'])
+    inkCli(['publish'])
+
+    const pdf = path.resolve(folder, 'test/dist/documents/test-0.0.0.pdf')
+    t.true(pathExists.sync(pdf))
+  })
+})

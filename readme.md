@@ -1,48 +1,33 @@
-# [<img src="https://cdn.rawgit.com/sindresorhus/trash/1cdbd660976d739eeb45447bb6b62c41ac4a3ecf/media/logo.svg" width="150" align="left" alt="trash-cli">](https://github.com/sindresorhus/trash)CLI [![Build Status](https://travis-ci.org/sindresorhus/trash-cli.svg?branch=master)](https://travis-ci.org/sindresorhus/trash-cli)
+# Ink CLI [![Build Status](https://travis-ci.org/ink-elements/ink-cli.svg?branch=master)](https://travis-ci.org/ink-elements/ink-cli)
 
-> Move files and folders to the trash
-
-Works on macOS, Linux, and Windows.
-
-In contrast to [`rm`](http://en.wikipedia.org/wiki/Rm_(Unix)) which is [dangerous](http://docstore.mik.ua/orelly/unix3/upt/ch14_03.htm) and permanently delete files, this only moves them to the trash, which is much safer and reversible. I would also recommend reading my guide on [safeguarding `rm`](https://github.com/sindresorhus/guides/blob/master/how-not-to-rm-yourself.md#safeguard-rm).
-
+> Manage ink-elements project
 
 ## Install
 
 ```
-$ npm install --global trash-cli
+$ npm install --global ink-cli
 ```
-
 
 ## Usage
 
 ```
-$ trash --help
+$ ink --help
 
-  Usage
-    $ trash <path|glob> [...]
+  Options
+    init <path>   Create a new ink-elements project
+    publish       Generate PDF document from HTML
 
   Examples
-    $ trash unicorn.png rainbow.png
-    $ trash '*.png' '!unicorn.png'
+    $ ink init project-folder
+    $ cd project-folder
+    $ npm run build
+    $ ink publish
 ```
-
-
-## Tip
-
-Add `alias rm=trash` to your `.zshrc`/`.bashrc` to reduce typing & safely trash files: `$ rm unicorn.png`.
-
-
-## [FAQ](https://github.com/sindresorhus/trash#faq)
-
 
 ## Related
 
-- [trash](https://github.com/sindresorhus/trash) - API for this module
-- [empty-trash-cli](https://github.com/sindresorhus/empty-trash-cli) - Empty the trash
-- [del-cli](https://github.com/sindresorhus/del-cli) - Delete files and folders
-
+- [ink-elements](https://github.com/rgladwell/ink-elements) - Web component library used for this framework
 
 ## License
 
-MIT © [Sindre Sorhus](https://sindresorhus.com)
+MIT © [Ricardo Gladwell](https://gladwell.me)
