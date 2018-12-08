@@ -1,7 +1,7 @@
 {
   "name": "ink-cli",
-  "version": "0.0.0",
   "description": "Manage ink-elements projects",
+  "version": "0.0.1",
   "license": "MIT",
   "repository": "ink-elements/ink-cli",
   "author": {
@@ -19,7 +19,8 @@
     "test": "eslint . && ava"
   },
   "files": [
-    "cli.js"
+    "cli.js",
+    "lib/**/*"
   ],
   "keywords": [
     "cli-app",
