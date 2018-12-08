@@ -2475,10 +2475,10 @@ gauge@~2.7.3:
     strip-ansi "^3.0.1"
     wide-align "^1.1.0"
 
-generator-ink-doc@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/generator-ink-doc/-/generator-ink-doc-0.1.0.tgz#c6f26c67ec65677f01d4e66ee0a027eece57e35c"
-  integrity sha512-tz9BUY7o+hY3E7bbcb89qOZLEhq6lCnzU+G9anPdj9JewJBLpUMbG3L/NVrUjji2HWdYvqgM4QqciC0heHFomw==
+generator-ink-doc@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/generator-ink-doc/-/generator-ink-doc-0.1.2.tgz#8140900af7c2659cd219ab0851bef415a6c1db38"
+  integrity sha512-OrSwf7rr3kFjM1kgmUpnJvzC8ig3wEsELkOKGb+pDiypPSLG3tNPc8f/iJC+2ddXOeXHe+8J/GivOZhJ+khcAA==
   dependencies:
     chalk "^2.1.0"
     yeoman-generator "^2.0.1"
