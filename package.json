@@ -1,6 +1,6 @@
 {
   "name": "ink-cli",
-  "description": "Manage ink-elements projects",
+  "description": "Command line tool to manage ink-elements projects",
   "version": "0.0.1",
   "license": "MIT",
   "repository": "ink-elements/ink-cli",

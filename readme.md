@@ -1,6 +1,6 @@
 # Ink CLI [![Build Status](https://travis-ci.org/ink-elements/ink-cli.svg?branch=master)](https://travis-ci.org/ink-elements/ink-cli)
 
-> Manage ink-elements project
+> Command line tool to manage ink-elements projects
 
 ## Install
 
