@@ -23,6 +23,8 @@ const cli = meow(`
 
 updateNotifier({ pkg: cli.pkg }).notify()
 
+console.log(`${cli.pkg.name} (version ${cli.pkg.version})`)
+
 if (cli.input.length === 0) {
   console.error(cli.help)
   process.exit(1)
