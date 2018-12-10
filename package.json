@@ -29,9 +29,9 @@
     "publishing"
   ],
   "dependencies": {
-    "file-url": "^2.0.2",
     "fs-extra": "^7.0.0",
     "generator-ink-doc": "^0.1.4",
+    "http-server": "^0.11.1",
     "meow": "^3.7.0",
     "puppeteer": "^1.11.0",
     "update-notifier": "^1.0.2",
