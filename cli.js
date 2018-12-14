@@ -4,6 +4,7 @@
 const updateNotifier = require('update-notifier')
 const meow = require('meow')
 const scribe = require('./lib/scribe.js')
+const documents = require('./lib/documents.js')
 
 const cli = meow(`
   Usage
@@ -31,5 +32,6 @@ if (cli.input.length === 0) {
 } else if (cli.input[0] === 'init') {
   scribe.init(cli.input[1])
 } else if (cli.input[0] === 'publish') {
-  scribe.publish()
+  const document = documents.load(process.cwd())
+  scribe.publish(document)
 }
