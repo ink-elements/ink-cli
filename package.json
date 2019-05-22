@@ -4,11 +4,7 @@
   "version": "0.0.8",
   "license": "MIT",
   "repository": "ink-elements/ink-cli",
-  "author": {
-    "name": "Ricardo Gladwell",
-    "email": "ricardo@gladwell.me",
-    "url": "gladwell.me"
-  },
+  "author": "R.G. Wood <ric@grislyeye.com> (https://grislyeye.com)",
   "bin": {
     "ink": "cli.js"
   },
