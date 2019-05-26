@@ -5,7 +5,7 @@ import execa from 'execa'
 import tempy from 'tempy'
 import fs from 'fs-extra'
 
-function inkCli(args) {
+function scribeCli(args) {
   const cliPath = path.resolve(__dirname, 'cli.js')
   const result = execa.sync(cliPath, args)
 
@@ -28,7 +28,7 @@ async function withTestFolder(testWith) {
 
 test('should create ink project', async t => {
   await withTestFolder(async folder => {
-    inkCli(['init', 'project-folder'])
+    scribeCli(['init', 'project-folder'])
 
     const project = path.resolve(folder, 'project-folder')
     t.true(pathExists.sync(project))
@@ -37,11 +37,11 @@ test('should create ink project', async t => {
 
 test('should publish PDF', async t => {
   await withTestFolder(async folder => {
-    inkCli(['init', 'test'])
+    scribeCli(['init', 'test'])
     const project = path.resolve(folder, 'test')
     process.chdir(project)
     execa.sync('npm', ['run', 'build'])
-    inkCli(['publish'])
+    scribeCli(['publish'])
 
     const pdf = path.resolve(folder, 'test/dist/documents/test-0.0.0.pdf')
     t.true(pathExists.sync(pdf))

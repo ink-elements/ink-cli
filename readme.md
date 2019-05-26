@@ -1,27 +1,27 @@
-# Ink CLI [![Build Status](https://travis-ci.org/ink-elements/ink-cli.svg?branch=master)](https://travis-ci.org/ink-elements/ink-cli)
+# Scribe CLI [![Build Status](https://travis-ci.org/ink-elements/scribe-cli.svg?branch=master)](https://travis-ci.org/ink-elements/scribe-cli)
 
 > Command line tool to manage ink-elements projects
 
 ## Install
 
 ```
-$ npm install --global ink-cli
+$ npm install --global scribe-cli
 ```
 
 ## Usage
 
 ```
-$ ink --help
+$ scribe --help
 
   Options
     init <path>   Create a new ink-elements project
     publish       Generate PDF document from HTML
 
   Examples
-    $ ink init project-folder
+    $ scribe init project-folder
     $ cd project-folder
     $ npm run build
-    $ ink publish
+    $ scribe publish
 ```
 
 ## Related
