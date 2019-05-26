@@ -25,25 +25,25 @@
     "publishing"
   ],
   "dependencies": {
-    "fs-extra": "^7.0.0",
+    "fs-extra": "^8.0.1",
     "generator-ink-doc": "^0.1.4",
     "http-server": "^0.11.1",
-    "meow": "^3.7.0",
-    "puppeteer": "^1.11.0",
-    "update-notifier": "^1.0.2",
-    "yeoman-environment": "^2.3.3",
-    "yo": "^2.0.5"
+    "meow": "^5.0.0",
+    "puppeteer": "^1.17.0",
+    "update-notifier": "^3.0.0",
+    "yeoman-environment": "^2.3.4",
+    "yo": "^2.0.6"
   },
   "devDependencies": {
     "ava": "*",
-    "eslint": "^5.6.1",
+    "eslint": "^5.16.0",
     "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-node": "^7.0.1",
-    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-standard": "^4.0.0",
-    "execa": "^0.4.0",
-    "path-exists": "^3.0.0",
-    "tempy": "^0.2.1"
+    "execa": "^1.0.0",
+    "path-exists": "^4.0.0",
+    "tempy": "^0.3.0"
   }
 }
