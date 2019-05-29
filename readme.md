@@ -30,4 +30,4 @@ $ scribe --help
 
 ## License
 
-MIT © [Ricardo Gladwell](https://gladwell.me)
+MIT © [R.G. Wood](https://grislyeye.com)
