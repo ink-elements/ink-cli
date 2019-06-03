@@ -27,7 +27,7 @@
   "dependencies": {
     "fs-extra": "^8.0.1",
     "generator-ink-doc": "^0.2.2",
-    "http-server": "^0.11.1",
+    "live-server": "^1.2.1",
     "meow": "^5.0.0",
     "puppeteer": "^1.17.0",
     "update-notifier": "^3.0.0",
