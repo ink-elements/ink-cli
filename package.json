@@ -1,7 +1,7 @@
 {
   "name": "scribe-cli",
   "description": "Command line tool to manage ink-elements projects",
-  "version": "0.1.3",
+  "version": "1.0.0",
   "license": "MIT",
   "repository": "ink-elements/scribe-cli",
   "author": "R.G. Wood <ric@grislyeye.com> (https://grislyeye.com)",
