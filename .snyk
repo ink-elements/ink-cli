@@ -1,0 +1,58 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - yeoman-environment > lodash:
+        patched: '2020-05-01T06:11:40.240Z'
+    - yo > lodash:
+        patched: '2020-05-01T06:11:40.240Z'
+    - yo > async > lodash:
+        patched: '2020-05-01T06:11:40.240Z'
+    - yeoman-environment > grouped-queue > lodash:
+        patched: '2020-05-01T06:11:40.240Z'
+    - yeoman-environment > inquirer > lodash:
+        patched: '2020-05-01T06:11:40.240Z'
+    - generator-ink-doc > yeoman-generator > lodash:
+        patched: '2020-05-01T06:11:40.240Z'
+    - yeoman-environment > yeoman-generator > lodash:
+        patched: '2020-05-01T06:11:40.240Z'
+    - yo > yeoman-environment > lodash:
+        patched: '2020-05-01T06:11:40.240Z'
+    - yo > global-tunnel-ng > lodash:
+        patched: '2020-05-01T06:11:40.240Z'
+    - yo > inquirer > lodash:
+        patched: '2020-05-01T06:11:40.240Z'
+    - generator-ink-doc > yeoman-generator > async > lodash:
+        patched: '2020-05-01T06:11:40.240Z'
+    - yeoman-environment > yeoman-generator > async > lodash:
+        patched: '2020-05-01T06:11:40.240Z'
+    - yo > insight > async > lodash:
+        patched: '2020-05-01T06:11:40.240Z'
+    - generator-ink-doc > yeoman-generator > grouped-queue > lodash:
+        patched: '2020-05-01T06:11:40.240Z'
+    - yeoman-environment > yeoman-generator > grouped-queue > lodash:
+        patched: '2020-05-01T06:11:40.240Z'
+    - yo > yeoman-environment > grouped-queue > lodash:
+        patched: '2020-05-01T06:11:40.240Z'
+    - yo > yeoman-environment > inquirer > lodash:
+        patched: '2020-05-01T06:11:40.240Z'
+    - yo > yeoman-environment > yeoman-generator > lodash:
+        patched: '2020-05-01T06:11:40.240Z'
+    - generator-ink-doc > yeoman-generator > yeoman-environment > lodash:
+        patched: '2020-05-01T06:11:40.240Z'
+    - yo > yeoman-doctor > global-tunnel-ng > lodash:
+        patched: '2020-05-01T06:11:40.240Z'
+    - yo > insight > inquirer > lodash:
+        patched: '2020-05-01T06:11:40.240Z'
+    - yo > tabtab > inquirer > lodash:
+        patched: '2020-05-01T06:11:40.240Z'
+    - yo > yeoman-environment > yeoman-generator > async > lodash:
+        patched: '2020-05-01T06:11:40.240Z'
+    - yo > yeoman-environment > yeoman-generator > grouped-queue > lodash:
+        patched: '2020-05-01T06:11:40.240Z'
+    - generator-ink-doc > yeoman-generator > yeoman-environment > grouped-queue > lodash:
+        patched: '2020-05-01T06:11:40.240Z'
+    - generator-ink-doc > yeoman-generator > yeoman-environment > inquirer > lodash:
+        patched: '2020-05-01T06:11:40.240Z'
