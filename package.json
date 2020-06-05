@@ -34,7 +34,7 @@
     "puppeteer": "^2.1.1",
     "snyk": "^1.316.2",
     "update-notifier": "^4.1.0",
-    "yeoman-environment": "^2.10.0",
+    "yeoman-environment": "^2.10.1",
     "yo": "^3.1.1"
   },
   "devDependencies": {
