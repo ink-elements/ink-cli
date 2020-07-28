@@ -1,7 +1,7 @@
 {
   "name": "scribe-cli",
   "description": "Command line tool to manage ink-elements projects",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "repository": "ink-elements/scribe-cli",
   "author": "R.G. Wood <ric@grislyeye.com> (https://grislyeye.com)",
@@ -27,27 +27,27 @@
     "publishing"
   ],
   "dependencies": {
-    "fs-extra": "^9.0.0",
+    "fs-extra": "^9.0.1",
     "generator-ink-doc": "^0.3.0",
     "live-server": "^1.2.1",
-    "meow": "^6.1.1",
-    "puppeteer": "^2.1.1",
-    "snyk": "^1.316.2",
+    "meow": "^7.0.1",
+    "puppeteer": "^5.2.1",
+    "snyk": "^1.368.0",
     "update-notifier": "^4.1.0",
-    "yeoman-environment": "^2.10.0",
+    "yeoman-environment": "^2.10.3",
     "yo": "^3.1.1"
   },
   "devDependencies": {
     "ava": "^2.4.0",
-    "eslint": "^6.8.0",
+    "eslint": "^7.5.0",
     "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "execa": "^4.0.0",
+    "execa": "^4.0.3",
     "path-exists": "^4.0.0",
-    "tempy": "^0.5.0"
+    "tempy": "^0.6.0"
   },
   "snyk": true
 }
