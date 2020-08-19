@@ -11,8 +11,8 @@ const cli = meow(`
     $ scribe
 
   Options
-    init <path>                  Create a new ink-elements project
-    publish --page-format <size> Generate PDF document from HTML
+    init <path>                         Create a new ink-elements project
+    publish --page-format <size> <path> Generate PDF document from HTML
 
   Examples
     $ scribe init project-folder
@@ -38,6 +38,6 @@ if (cli.input.length === 0) {
 } else if (cli.input[0] === 'init') {
   scribe.init(cli.input[1])
 } else if (cli.input[0] === 'publish') {
-  const document = documents.load(process.cwd(), cli.flags.pageFormat)
+  const document = documents.load(process.cwd(), cli.input[1], cli.flags.pageFormat)
   scribe.publish(document)
 }
