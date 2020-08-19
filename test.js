@@ -41,7 +41,7 @@ test('should publish PDF', async t => {
     const project = path.resolve(folder, 'test')
     process.chdir(project)
     execa.sync('npm', ['run', 'build'])
-    scribeCli(['publish'])
+    scribeCli(['publish', 'dist/html/index.html', 'dist/documents/'])
 
     const pdf = path.resolve(folder, 'test/dist/documents/test-0.0.0.pdf')
     t.true(pathExists.sync(pdf))
