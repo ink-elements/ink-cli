@@ -13,15 +13,18 @@ $ npm install --global scribe-cli
 ```
 $ scribe --help
 
+  Usage
+    $ scribe
+
   Options
-    init <path>           Create a new ink-elements project
-    publish --size <size> Generate PDF document from HTML
+    init <path>                  Create a new ink-elements project
+    publish --page-format <size> Generate PDF document from HTML
 
   Examples
     $ scribe init project-folder
     $ cd project-folder
     $ npm run build
-    $ scribe publish --size A4
+    $ scribe publish --page-format A4
 ```
 
 ## Related
