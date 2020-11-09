@@ -17,91 +17,65 @@ ignore:
         expires: '2020-07-03T14:38:20.087Z'
   SNYK-JS-HTTPAUTH-471683:
     - live-server > http-auth:
-        reason: None given
-        expires: '2020-07-03T14:38:20.087Z'
+        reason: No remedy available
+        expires: '2020-12-09T12:38:15.596Z'
+  SNYK-JS-AXIOS-1038255:
+    - yeoman-environment > npm-api > paged-request > axios:
+        reason: No remedy available
+        expires: '2020-12-09T12:38:15.596Z'
+    - yo > yeoman-environment > npm-api > paged-request > axios:
+        reason: No remedy available
+        expires: '2020-12-09T12:38:15.596Z'
+    - generator-ink-doc > yeoman-generator > yeoman-environment > npm-api > paged-request > axios:
+        reason: No rememdy available
+        expires: '2020-12-09T12:38:15.596Z'
+  SNYK-JS-LOCUTUS-1009836:
+    - yo > yeoman-doctor > twig > locutus:
+        reason: No Remedy available
+        expires: '2020-12-09T12:38:15.596Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   SNYK-JS-LODASH-567746:
     - yeoman-environment > lodash:
         patched: '2020-05-01T06:11:40.240Z'
-      yo > async > lodash:
-        patched: '2020-06-03T14:37:10.023Z'
     - yo > lodash:
         patched: '2020-05-01T06:11:40.240Z'
-      yo > yeoman-environment > lodash:
-        patched: '2020-06-03T14:37:10.023Z'
     - yo > async > lodash:
         patched: '2020-05-01T06:11:40.240Z'
-      generator-ink-doc > yeoman-generator > lodash:
-        patched: '2020-06-03T14:37:10.023Z'
     - yeoman-environment > grouped-queue > lodash:
         patched: '2020-05-01T06:11:40.240Z'
-      yo > global-tunnel-ng > lodash:
-        patched: '2020-06-03T14:37:10.023Z'
     - yeoman-environment > inquirer > lodash:
         patched: '2020-05-01T06:11:40.240Z'
-      yo > inquirer > lodash:
-        patched: '2020-06-03T14:37:10.023Z'
     - generator-ink-doc > yeoman-generator > lodash:
         patched: '2020-05-01T06:11:40.240Z'
-      generator-ink-doc > yeoman-generator > async > lodash:
-        patched: '2020-06-03T14:37:10.023Z'
     - yeoman-environment > yeoman-generator > lodash:
         patched: '2020-05-01T06:11:40.240Z'
-      yo > insight > async > lodash:
-        patched: '2020-06-03T14:37:10.023Z'
     - yo > yeoman-environment > lodash:
         patched: '2020-05-01T06:11:40.240Z'
-      yo > yeoman-environment > grouped-queue > lodash:
-        patched: '2020-06-03T14:37:10.023Z'
     - yo > global-tunnel-ng > lodash:
         patched: '2020-05-01T06:11:40.240Z'
-      generator-ink-doc > yeoman-generator > grouped-queue > lodash:
-        patched: '2020-06-03T14:37:10.023Z'
     - yo > inquirer > lodash:
         patched: '2020-05-01T06:11:40.240Z'
-      yo > yeoman-environment > inquirer > lodash:
-        patched: '2020-06-03T14:37:10.023Z'
     - generator-ink-doc > yeoman-generator > async > lodash:
         patched: '2020-05-01T06:11:40.240Z'
-      generator-ink-doc > yeoman-generator > yeoman-environment > lodash:
-        patched: '2020-06-03T14:37:10.023Z'
     - yeoman-environment > yeoman-generator > async > lodash:
         patched: '2020-05-01T06:11:40.240Z'
-      yo > yeoman-environment > yeoman-generator > lodash:
-        patched: '2020-06-03T14:37:10.023Z'
     - yo > insight > async > lodash:
         patched: '2020-05-01T06:11:40.240Z'
-      yo > yeoman-doctor > global-tunnel-ng > lodash:
-        patched: '2020-06-03T14:37:10.023Z'
     - generator-ink-doc > yeoman-generator > grouped-queue > lodash:
         patched: '2020-05-01T06:11:40.240Z'
-      yo > insight > inquirer > lodash:
-        patched: '2020-06-03T14:37:10.023Z'
     - yeoman-environment > yeoman-generator > grouped-queue > lodash:
         patched: '2020-05-01T06:11:40.240Z'
-      yo > tabtab > inquirer > lodash:
-        patched: '2020-06-03T14:37:10.023Z'
     - yo > yeoman-environment > grouped-queue > lodash:
         patched: '2020-05-01T06:11:40.240Z'
-      yo > yeoman-environment > yeoman-generator > async > lodash:
-        patched: '2020-06-03T14:37:10.023Z'
     - yo > yeoman-environment > inquirer > lodash:
         patched: '2020-05-01T06:11:40.240Z'
-      generator-ink-doc > yeoman-generator > yeoman-environment > grouped-queue > lodash:
-        patched: '2020-06-03T14:37:10.023Z'
     - yo > yeoman-environment > yeoman-generator > lodash:
         patched: '2020-05-01T06:11:40.240Z'
-      yo > yeoman-environment > yeoman-generator > grouped-queue > lodash:
-        patched: '2020-06-03T14:37:10.023Z'
     - generator-ink-doc > yeoman-generator > yeoman-environment > lodash:
         patched: '2020-05-01T06:11:40.240Z'
-      generator-ink-doc > yeoman-generator > yeoman-environment > inquirer > lodash:
-        patched: '2020-06-03T14:37:10.023Z'
     - yo > yeoman-doctor > global-tunnel-ng > lodash:
         patched: '2020-05-01T06:11:40.240Z'
-      yo > lodash:
-        patched: '2020-06-03T14:37:10.023Z'
     - yo > insight > inquirer > lodash:
         patched: '2020-05-01T06:11:40.240Z'
     - yo > tabtab > inquirer > lodash:
@@ -114,3 +88,43 @@ patch:
         patched: '2020-05-01T06:11:40.240Z'
     - generator-ink-doc > yeoman-generator > yeoman-environment > inquirer > lodash:
         patched: '2020-05-01T06:11:40.240Z'
+    - yo > async > lodash:
+        patched: '2020-06-03T14:37:10.023Z'
+    - yo > yeoman-environment > lodash:
+        patched: '2020-06-03T14:37:10.023Z'
+    - generator-ink-doc > yeoman-generator > lodash:
+        patched: '2020-06-03T14:37:10.023Z'
+    - yo > global-tunnel-ng > lodash:
+        patched: '2020-06-03T14:37:10.023Z'
+    - yo > inquirer > lodash:
+        patched: '2020-06-03T14:37:10.023Z'
+    - generator-ink-doc > yeoman-generator > async > lodash:
+        patched: '2020-06-03T14:37:10.023Z'
+    - yo > insight > async > lodash:
+        patched: '2020-06-03T14:37:10.023Z'
+    - yo > yeoman-environment > grouped-queue > lodash:
+        patched: '2020-06-03T14:37:10.023Z'
+    - generator-ink-doc > yeoman-generator > grouped-queue > lodash:
+        patched: '2020-06-03T14:37:10.023Z'
+    - yo > yeoman-environment > inquirer > lodash:
+        patched: '2020-06-03T14:37:10.023Z'
+    - generator-ink-doc > yeoman-generator > yeoman-environment > lodash:
+        patched: '2020-06-03T14:37:10.023Z'
+    - yo > yeoman-environment > yeoman-generator > lodash:
+        patched: '2020-06-03T14:37:10.023Z'
+    - yo > yeoman-doctor > global-tunnel-ng > lodash:
+        patched: '2020-06-03T14:37:10.023Z'
+    - yo > insight > inquirer > lodash:
+        patched: '2020-06-03T14:37:10.023Z'
+    - yo > tabtab > inquirer > lodash:
+        patched: '2020-06-03T14:37:10.023Z'
+    - yo > yeoman-environment > yeoman-generator > async > lodash:
+        patched: '2020-06-03T14:37:10.023Z'
+    - generator-ink-doc > yeoman-generator > yeoman-environment > grouped-queue > lodash:
+        patched: '2020-06-03T14:37:10.023Z'
+    - yo > yeoman-environment > yeoman-generator > grouped-queue > lodash:
+        patched: '2020-06-03T14:37:10.023Z'
+    - generator-ink-doc > yeoman-generator > yeoman-environment > inquirer > lodash:
+        patched: '2020-06-03T14:37:10.023Z'
+    - yo > lodash:
+        patched: '2020-06-03T14:37:10.023Z'
