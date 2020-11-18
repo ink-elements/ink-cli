@@ -1,7 +1,7 @@
 {
   "name": "scribe-cli",
   "description": "Command line tool to manage Paged.js projects",
-  "version": "2.0.2",
+  "version": "2.0.4",
   "license": "MIT",
   "repository": "ink-elements/scribe-cli",
   "author": "R.G. Wood <ric@grislyeye.com> (https://grislyeye.com)",
@@ -30,24 +30,24 @@
     "fs-extra": "^9.0.1",
     "generator-ink-doc": "^0.3.0",
     "live-server": "^1.2.1",
-    "meow": "^7.1.1",
-    "puppeteer": "^5.3.1",
-    "snyk": "^1.413.2",
-    "update-notifier": "^5.0.0",
+    "meow": "^8.0.0",
+    "puppeteer": "^5.5.0",
+    "snyk": "^1.428.0",
+    "update-notifier": "^5.0.1",
     "yeoman-environment": "^2.10.3",
     "yo": "^3.1.1"
   },
   "devDependencies": {
     "ava": "^2.4.0",
-    "eslint": "^7.10.0",
-    "eslint-config-standard": "^14.1.1",
+    "eslint": "^7.13.0",
+    "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
-    "execa": "^4.0.3",
+    "eslint-plugin-standard": "^4.1.0",
+    "execa": "^4.1.0",
     "path-exists": "^4.0.0",
-    "tempy": "^0.7.1"
+    "tempy": "^1.0.0"
   },
   "snyk": true
 }
