@@ -1,4 +1,4 @@
-# Scribe CLI [![Build Status](https://travis-ci.org/ink-elements/scribe-cli.svg?branch=master)](https://travis-ci.org/ink-elements/scribe-cli) [![Known Vulnerabilities](https://snyk.io/test/github/ink-elements/scribe-cli/badge.svg?targetFile=package.json)](https://snyk.io/test/github/ink-elements/scribe-cli?targetFile=package.json)
+# Scribe CLI [![Build Status](https://travis-ci.org/rg-wood/scribe-cli.svg?branch=master)](https://travis-ci.org/rg-wood/scribe-cli) [![Known Vulnerabilities](https://snyk.io/test/github/rg-wood/scribe-cli/badge.svg?targetFile=package.json)](https://snyk.io/test/github/rg-wood/scribe-cli?targetFile=package.json)
 
 > Command line tool to manage ink-elements projects
 

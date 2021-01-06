@@ -1,9 +1,9 @@
 {
   "name": "scribe-cli",
   "description": "Command line tool to manage Paged.js projects",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "license": "MIT",
-  "repository": "ink-elements/scribe-cli",
+  "repository": "rg-wood/scribe-cli",
   "author": "R.G. Wood <ric@grislyeye.com> (https://grislyeye.com)",
   "bin": {
     "scribe": "cli.js"
